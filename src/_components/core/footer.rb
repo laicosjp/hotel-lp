@@ -1,0 +1,6 @@
+class Core::Footer < Bridgetown::Component
+  def initialize(metadata:, resource:)
+    @metadata = metadata
+    @resource = resource
+  end
+end
