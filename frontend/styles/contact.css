@@ -1,8 +1,8 @@
 .contact {
   --accent: #b85c7a;
   --accent-dark: #7f344f;
-  --cream: #fff4ee;
-  --cream-strong: #f6d8df;
+  --cream: #f6f0ff;
+  --cream-strong: #eadcff;
   --surface: #fff;
   --text: #2a1322;
   --muted: #6c5260;
@@ -13,7 +13,7 @@
   padding: 15vw 0;
   color: var(--text);
   background:
-    radial-gradient(circle at 12% 18%, rgb(184 92 122 / 14%), transparent 26vw),
+    radial-gradient(circle at 12% 18%, rgb(128 92 184 / 14%), transparent 26vw),
     linear-gradient(180deg, #fff 0%, var(--cream) 100%);
 
   &::before {
@@ -24,7 +24,7 @@
     width: 190px;
     height: 190px;
     border-radius: var(--radius-round);
-    background: rgb(184 92 122 / 10%);
+    background: rgb(128 92 184 / 10%);
   }
 
   .wrap {
@@ -79,7 +79,7 @@
 
   .notes li {
     padding: 8px 16px;
-    border: 1px solid #efd2dc;
+    border: 1px solid #ded0f4;
     border-radius: 999px;
     color: var(--accent);
     background: rgb(255 255 255 / 78%);
@@ -154,7 +154,7 @@
   textarea:focus {
     border-color: var(--accent);
     background: var(--surface);
-    box-shadow: 0 0 0 4px rgb(184 92 122 / 14%);
+    box-shadow: 0 0 0 4px rgb(128 92 184 / 14%);
   }
 
   .actions {
