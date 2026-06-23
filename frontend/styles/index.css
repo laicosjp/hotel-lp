@@ -1,6 +1,7 @@
 @import "./vendor/open-props.css";
 @import "./header.css";
 @import "./hero.css";
+@import "./support.css";
 @import "./reason.css";
 
 :root {
