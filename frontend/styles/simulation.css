@@ -115,18 +115,24 @@
   }
 
   li {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: var(--size-1);
     margin: 0;
-    color: var(--muted);
+    padding: 8px 19px 7px 20px;
+    border: 1px solid #ffe0ca;
+    border-radius: 30px;
+    background: var(--cream);
+    color: var(--text);
     font-size: var(--font-size-0);
     font-weight: var(--font-weight-7);
+    line-height: 1.4;
   }
 
   li img {
     width: 20px;
     height: auto;
+    margin-top: -4px;
   }
 }
 
@@ -230,6 +236,10 @@
 
     li {
       font-size: var(--font-size-1);
+    }
+
+    li + li {
+      margin-left: var(--size-1);
     }
   }
 }
