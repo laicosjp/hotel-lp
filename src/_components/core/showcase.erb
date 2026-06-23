@@ -8,13 +8,16 @@
     <div class="grid">
       <% items.each do |item| %>
         <article class="item">
-          <p class="tag"><%= item[:tag] %></p>
-          <p class="photo"><img src="<%= item[:image] %>" alt="<%= item[:alt] %>" width="900" height="600" /></p>
-          <h3><%= item[:title] %></h3>
-          <dl>
-            <dt><%= item[:location] %></dt>
-            <dd><%= item[:license] %></dd>
-          </dl>
+          <a href="<%= item[:url] %>" target="_blank" rel="noopener">
+            <p class="tag"><%= item[:tag] %></p>
+            <p class="photo"><img src="<%= item[:image] %>" alt="<%= item[:alt] %>" width="900" height="600" /></p>
+            <div class="body">
+              <h3><%= item[:title] %></h3>
+              <p class="summary"><%= item[:summary] %></p>
+              <p class="description"><%= item[:description] %></p>
+              <span class="button">サイトを見る</span>
+            </div>
+          </a>
         </article>
       <% end %>
     </div>

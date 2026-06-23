@@ -6,12 +6,33 @@ class Core::Showcase < Bridgetown::Component
 
   def items
     [
-      { tag: 'Room', image: 'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=900&q=80', alt: '上質なホテルロビー', title: '客室・設備紹介ページ', location: '部屋タイプごとに魅力を整理', license: '写真、料金、設備、利用時間を見やすく掲載' },
-      { tag: 'Price', image: 'https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=900&q=80', alt: '落ち着いたホテル客室', title: '料金・プランページ', location: '休憩・宿泊・延長料金を分かりやすく', license: '来店前の迷いを減らす情報設計' },
-      { tag: 'Access', image: 'https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=900&q=80', alt: 'ホテル客室のベッド', title: 'アクセス・予約導線', location: 'Googleマップ、電話、予約を整理', license: 'スマホからすぐ行動できる導線設計' },
-      { tag: 'Campaign', image: 'https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=900&q=80', alt: 'ホテルラウンジ', title: 'キャンペーン更新', location: 'イベントや割引情報を更新しやすく', license: '運営側が使いやすい構成に調整' },
-      { tag: 'Brand', image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80', alt: 'ホテル外観', title: '施設イメージ改善', location: '古さより安心感が伝わる見せ方へ', license: '過度に盛らず、清潔感と雰囲気を表現' },
-      { tag: 'Recruit', image: 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80', alt: 'ホテル客室インテリア', title: '求人・会社情報', location: '採用や運営会社情報も整備', license: 'お客様と求職者の両方に信頼感を作る' },
+      {
+        tag: '実装例1',
+        image: 'https://raw.githubusercontent.com/laicosjp/koisuruhotel/main/demo1/src/images/lunea/hero-suite.png',
+        alt: '実装例1のホテルサイト',
+        title: '重厚感のあるラグジュアリーサイト',
+        summary: 'プラン、客室、設備、ギャラリーまで一通り見せる構成',
+        description: '高級感を前面に出しながら、空室確認や予約導線も分かりやすく配置したデザインです。',
+        url: 'https://laicosjp.github.io/koisuruhotel/demo-1/'
+      },
+      {
+        tag: '実装例2',
+        image: 'https://raw.githubusercontent.com/laicosjp/koisuruhotel/main/demo2/src/images/lunea/room-executive.png',
+        alt: '実装例2のホテルサイト',
+        title: '明るく上品な編集型サイト',
+        summary: '写真、料金、プランを雑誌風に整理して見せる構成',
+        description: '初めて見る人にも施設の雰囲気が伝わりやすい、余白と読みやすさを重視したデザインです。',
+        url: 'https://laicosjp.github.io/koisuruhotel/demo-2/'
+      },
+      {
+        tag: '実装例3',
+        image: 'https://raw.githubusercontent.com/laicosjp/koisuruhotel/main/demo3/src/images/lunea/plan-suite.png',
+        alt: '実装例3のホテルサイト',
+        title: '夜の雰囲気を活かしたサイト',
+        summary: 'ダークトーンで非日常感と予約導線を両立する構成',
+        description: '落ち着いた印象を作りながら、客室一覧、設備紹介、クーポン情報まで見やすくまとめたデザインです。',
+        url: 'https://laicosjp.github.io/koisuruhotel/demo-3/'
+      },
     ]
   end
 end
