@@ -1,0 +1,176 @@
+.support {
+  --accent: #ff842c;
+  --surface: #fff;
+  --cream: #ffeed7;
+  --text: var(--gray-12);
+  --muted: #535353;
+  --card-shadow: #ffe1c7;
+
+  padding: 23vw 0 28vw;
+  background: var(--cream);
+  color: var(--text);
+  text-align: center;
+
+  .wrap {
+    box-sizing: border-box;
+    width: min(100% - 28px, 1200px);
+    margin-inline: auto;
+  }
+
+  .heading {
+    margin-left: -5px;
+
+    h2 {
+      margin: 0;
+      font-size: var(--font-size-4);
+      font-weight: var(--font-weight-7);
+      line-height: 1.2;
+    }
+
+    p {
+      margin: var(--size-1) 0 0;
+      color: var(--accent);
+      font-family: "Barlow Semi Condensed", "Noto Sans JP", sans-serif;
+      font-size: var(--font-size-0);
+      font-weight: var(--font-weight-7);
+    }
+  }
+
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--size-2);
+    margin: 20px 0 34px;
+    padding: 0;
+    list-style: none;
+  }
+
+  .item {
+    box-sizing: border-box;
+    width: calc((100% / 3) - 7px);
+    padding: 14px 0 11px;
+    border-radius: 24px;
+    background: var(--surface);
+    box-shadow: 4px 4px 24px var(--card-shadow);
+    color: var(--text);
+    font-size: 12px;
+    font-weight: var(--font-weight-7);
+    line-height: 1.5;
+    text-align: center;
+
+    img {
+      display: block;
+      width: 94%;
+      height: auto;
+      margin: 0 auto;
+    }
+  }
+
+  h3 {
+    position: relative;
+    display: table;
+    margin: 0 auto;
+    padding-left: var(--size-1);
+    font-size: var(--font-size-3);
+    font-weight: var(--font-weight-7);
+    line-height: 1.7;
+
+    span {
+      color: var(--accent);
+      text-decoration: underline;
+      text-decoration-thickness: var(--border-size-2);
+      text-underline-offset: var(--size-2);
+    }
+  }
+
+  h3::before,
+  h3::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    width: 26px;
+    height: 46px;
+    background: url("https://athost.jp/shared/img/sec01_ttl_deco.png") no-repeat center top / 100% 100%;
+  }
+
+  h3::before {
+    left: -28px;
+  }
+
+  h3::after {
+    right: -24px;
+    transform: scaleX(-1);
+  }
+
+  .sp {
+    display: inline;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .support {
+    padding: 87px 0 188px;
+
+    .heading {
+      margin-left: -3px;
+
+      h2 {
+        font-size: var(--font-size-6);
+        line-height: 1;
+      }
+
+      p {
+        margin-top: var(--size-1);
+        font-size: var(--font-size-3);
+      }
+    }
+
+    .grid {
+      gap: 32px;
+      margin: 28px 2px 57px 0;
+    }
+
+    .item {
+      width: 173px;
+      padding: 31px 0 34px;
+      border-radius: 40px;
+      font-size: var(--font-size-1);
+
+      img {
+        max-width: 126px;
+        margin-bottom: var(--size-1);
+      }
+    }
+
+    .item:nth-child(n + 7) {
+      padding: 23px 0 26px;
+    }
+
+    h3 {
+      font-size: var(--font-size-5);
+    }
+
+    h3::before,
+    h3::after {
+      top: 9px;
+      height: 42px;
+    }
+
+    h3::before {
+      left: -45px;
+    }
+
+    h3::after {
+      right: -34px;
+    }
+
+    h3 span {
+      text-underline-offset: 11px;
+    }
+
+    .sp {
+      display: none;
+    }
+  }
+}
