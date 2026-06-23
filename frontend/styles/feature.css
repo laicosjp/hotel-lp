@@ -15,16 +15,16 @@
     height: auto;
   }
 
-  .hero-row {
+  .intro-row {
     display: grid;
     background: var(--soft);
   }
 
-  .hero-photo {
+  .intro-photo {
     margin: 0;
   }
 
-  .hero-content {
+  .intro-content {
     box-sizing: border-box;
     padding: var(--size-7) var(--size-4);
   }
@@ -120,12 +120,12 @@
 
 @media screen and (min-width: 768px) {
   .feature {
-    .hero-row {
+    .intro-row {
       grid-template-columns: minmax(0, 52%) minmax(380px, 48%);
       align-items: center;
     }
 
-    .hero-content {
+    .intro-content {
       padding: 48px max(32px, calc(50vw - 500px)) 48px 54px;
     }
 
