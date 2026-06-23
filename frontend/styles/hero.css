@@ -34,7 +34,7 @@
 
   .logo {
     width: auto;
-    margin: 3vw auto 4.4vw;
+    margin: 3vw 0 4.4vw;
 
     a {
       display: inline-grid;
@@ -177,6 +177,7 @@
       width: 420px;
       min-width: 420px;
       margin-left: calc(50% - 532px);
+      text-align: left;
     }
 
     .kicker {
@@ -186,7 +187,7 @@
 
     .logo {
       width: auto;
-      margin: 7px 10px 21px 0;
+      margin: 7px 0 21px;
     }
 
     .catch {
