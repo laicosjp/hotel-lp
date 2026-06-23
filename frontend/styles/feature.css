@@ -5,7 +5,7 @@
   --text: #2a1322;
   --muted: #6c5260;
 
-  padding-bottom: 21.5vw;
+  padding: 14vw 0 21.5vw;
   background: var(--cream);
   color: var(--text);
   overflow: hidden;
@@ -130,7 +130,7 @@
 
 @media screen and (min-width: 768px) {
   .feature {
-    padding-bottom: 200px;
+    padding: 96px 0 200px;
 
     .intro-row {
       flex-direction: row;

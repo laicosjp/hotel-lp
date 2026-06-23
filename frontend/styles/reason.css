@@ -5,7 +5,7 @@
   --muted: #6c5260;
 
   position: relative;
-  padding-bottom: 21vw;
+  padding: 18vw 0 21vw;
   background: var(--surface);
   color: var(--text);
 
@@ -101,7 +101,7 @@
 
 @media screen and (min-width: 768px) {
   .reason {
-    padding-bottom: 120px;
+    padding: 88px 0 120px;
 
     .deco {
       width: 529px;
