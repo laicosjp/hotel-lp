@@ -1,18 +1,17 @@
-.site-header {
+.header {
   width: 100%;
-  min-height: 88px;
+  min-height: var(--size-px-10);
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding: 0 56px;
-  background: #fff;
+  padding-inline: var(--size-px-8);
   box-sizing: border-box;
 
   ul {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    gap: 40px;
+    gap: var(--size-px-8);
     margin: 0;
     padding: 0;
     list-style: none;
@@ -21,35 +20,35 @@
   a {
     display: inline-flex;
     align-items: center;
-    min-height: 40px;
-    color: #111;
-    font-size: 17px;
-    font-weight: 700;
+    min-height: var(--size-px-8);
+    color: var(--gray-12);
+    font-size: var(--font-size-2);
+    font-weight: var(--font-weight-7);
     line-height: 1;
     text-decoration: none;
     white-space: nowrap;
 
     &[aria-current="page"] {
       text-decoration: underline;
-      text-decoration-thickness: 2px;
-      text-underline-offset: 6px;
+      text-decoration-thickness: var(--border-size-2);
+      text-underline-offset: var(--size-2);
     }
   }
 }
 
-@media (max-width: 760px) {
+@media (--md-n-below) {
   .site-header {
     min-height: auto;
     justify-content: flex-start;
-    padding: 20px;
+    padding: var(--size-px-4);
     overflow-x: auto;
 
     ul {
-      gap: 24px;
+      gap: var(--size-px-5);
     }
 
     a {
-      font-size: 15px;
+      font-size: var(--font-size-1);
     }
   }
 }
