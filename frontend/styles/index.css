@@ -3,6 +3,7 @@
 @import "./hero.css";
 @import "./support.css";
 @import "./reason.css";
+@import "./feature.css";
 
 :root {
   font-family: "Noto Sans JP", system-ui, sans-serif;
