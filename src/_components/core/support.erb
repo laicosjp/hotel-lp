@@ -1,11 +1,19 @@
-<section>
-  <h2>充実のサポート内容</h2>
+<section class="support" id="sec01">
+  <div class="wrap">
+    <div class="heading">
+      <h2>充実のサポート内容</h2>
+      <p>Support</p>
+    </div>
 
-   <ul>
-     <% items.each do |item| %>
-       <li><%= item[:name] %></li>
-     <% end %>
-   </ul>
+    <ul class="grid">
+      <% items.each do |item| %>
+        <li class="item">
+          <img src="https://athost.jp/shared/img/<%= item[:image] %>" alt="<%= item[:name] %>" width="<%= item[:width] %>" height="<%= item[:height] %>" />
+          <span><%= item[:name] %></span>
+        </li>
+      <% end %>
+    </ul>
 
-   <p>旅館業法、民泊新法、特区民泊、すべてお任せください！</p>
+    <h3><span>旅館業法</span>、<span>民泊新法</span>、<span>特区民泊</span><br class="sp" />、すべてお任せください！</h3>
+  </div>
 </section>
