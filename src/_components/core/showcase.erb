@@ -1,4 +1,22 @@
-<section>
-  <h2>Showcase</h2>
-  <p>導入事例を紹介します。</p>
+<section class="showcase" id="sec07">
+  <div class="wrap">
+    <div class="section-heading">
+      <h2>豊富な運営実績</h2>
+      <p>Smart Management</p>
+    </div>
+
+    <div class="grid">
+      <% items.each do |item| %>
+        <article class="item">
+          <p class="tag"><%= item[:tag] %></p>
+          <p class="photo"><img src="https://athost.jp/shared/img/<%= item[:image] %>" alt="<%= item[:alt] %>" width="760" height="460" /></p>
+          <h3><%= item[:title] %></h3>
+          <dl>
+            <dt><%= item[:location] %></dt>
+            <dd><%= item[:license] %></dd>
+          </dl>
+        </article>
+      <% end %>
+    </div>
+  </div>
 </section>
