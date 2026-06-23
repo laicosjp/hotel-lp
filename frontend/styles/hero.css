@@ -1,5 +1,236 @@
 .hero {
-  h1 {
-    font-weight: bold;
+  --hero-orange: #ff842c;
+
+  position: relative;
+  box-sizing: border-box;
+  padding: 17.8vw 3px 0 0;
+  text-align: center;
+  overflow: hidden;
+
+  img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+  }
+
+  .hero-kicker {
+    margin: 0;
+    color: #232323;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1.35;
+  }
+
+  .hero-logo {
+    width: 61%;
+    margin: 3vw auto 4.4vw;
+
+    a {
+      display: block;
+    }
+  }
+
+  .hero-catch {
+    margin: 0;
+    color: #232323;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.4;
+  }
+
+  .hero-text {
+    width: 100%;
+    max-width: 290px;
+    margin: 17px auto 24px;
+    color: #5d5d5d;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 2;
+    text-align: center;
+  }
+
+  .hero-button {
+    position: relative;
+    width: 295px;
+    max-width: calc(100% - 28px);
+    margin: 0 auto;
+
+    a {
+      position: relative;
+      display: block;
+      height: 54px;
+      border-bottom: 3px solid #c86926;
+      border-radius: 8px;
+      background: var(--hero-orange);
+      color: #fff;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 50px;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    a::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 16px;
+      width: 24px;
+      height: 24px;
+      transform: translateY(-50%);
+      border-radius: 4px;
+      background: #fff;
+    }
+
+    a::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 24px;
+      z-index: 2;
+      width: 7px;
+      height: 7px;
+      transform: translateY(-50%);
+      background: var(--hero-orange);
+      clip-path: polygon(0 0, 0% 100%, 100% 50%);
+    }
+  }
+
+  .hero-key {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 15vw;
+
+    p {
+      position: relative;
+      margin-block: 0;
+    }
+
+    p:nth-child(1) {
+      width: 44%;
+      margin-left: auto;
+      margin-right: -3%;
+    }
+
+    p:nth-child(2) {
+      width: 42.6%;
+      margin: 23vw 0 0 10.7%;
+    }
+  }
+
+  .hero-deco {
+    position: relative;
+    margin: -13.5vw -2% -7vw -7%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 127px 0 105px;
+    overflow: visible;
+
+    .hero-content {
+      width: 420px;
+      min-width: 420px;
+      margin-left: calc(50% - 532px);
+    }
+
+    .hero-kicker {
+      margin-left: -2px;
+      font-size: 38px;
+    }
+
+    .hero-logo {
+      width: auto;
+      margin: 7px 10px 21px 0;
+    }
+
+    .hero-catch {
+      font-size: 32px;
+      line-height: 47px;
+      text-align: left;
+    }
+
+    .hero-text {
+      max-width: unset;
+      margin: 12px 0 30px;
+      font-size: 15px;
+      text-align: left;
+    }
+
+    .hero-button {
+      margin-inline: 0 auto;
+    }
+
+    .hero-key {
+      align-items: flex-start;
+      width: 47.1%;
+      margin-top: -8px;
+
+      p:nth-child(1) {
+        width: 48.7%;
+        margin-left: auto;
+        margin-right: -3.9%;
+      }
+
+      p:nth-child(2) {
+        width: 47.2%;
+        margin: 11.8vw auto 0 0;
+      }
+    }
+
+    .hero-deco {
+      position: absolute;
+      right: 0;
+      bottom: -54px;
+      width: 841px;
+      max-width: 100%;
+      margin: 0;
+    }
+  }
+}
+
+@media (max-width: 1300px) and (min-width: 768px) {
+  .hero {
+    padding-bottom: 265px;
+  }
+}
+
+@media (max-width: 1100px) and (min-width: 768px) {
+  .hero {
+    .hero-content {
+      margin-left: 15px;
+    }
+
+    .hero-key {
+      width: calc(100% - 460px);
+    }
+  }
+}
+
+@media (max-width: 900px) and (min-width: 768px) {
+  .hero {
+    align-items: center;
+
+    .hero-content {
+      width: 48%;
+      min-width: 320px;
+    }
+
+    .hero-kicker {
+      font-size: 33px;
+    }
+
+    .hero-key {
+      width: 48%;
+    }
   }
 }
