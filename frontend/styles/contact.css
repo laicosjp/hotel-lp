@@ -12,9 +12,7 @@
   overflow: hidden;
   padding: 15vw 0;
   color: var(--text);
-  background:
-    radial-gradient(circle at 12% 18%, rgb(128 92 184 / 14%), transparent 26vw),
-    linear-gradient(180deg, #fff 0%, var(--cream) 100%);
+  background: var(--cream);
 
   &::before {
     content: "";
