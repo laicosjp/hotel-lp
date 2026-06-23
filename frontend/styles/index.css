@@ -4,6 +4,8 @@
 @import "./support.css";
 @import "./reason.css";
 @import "./feature.css";
+@import "./region.css";
+@import "./showcase.css";
 @import "./simulation.css";
 
 :root {
