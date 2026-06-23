@@ -45,7 +45,7 @@
 
     .brand-name {
       font-family: "Barlow Semi Condensed", "Noto Sans JP", sans-serif;
-      font-size: clamp(38px, 9vw, 58px);
+      font-size: clamp(38px, 9vw, 50px);
       font-weight: 800;
       letter-spacing: -0.04em;
       line-height: .85;
