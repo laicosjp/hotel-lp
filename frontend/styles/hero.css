@@ -155,15 +155,6 @@
       margin: 23vw 0 0 10.7%;
     }
   }
-
-  .deco {
-    position: relative;
-    display: block;
-    height: 140px;
-    margin: -13.5vw -2% -7vw -7%;
-    background: var(--cream);
-    border-radius: 999px 0 0 999px;
-  }
 }
 
 @media screen and (min-width: 768px) {
