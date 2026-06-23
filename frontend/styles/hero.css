@@ -136,7 +136,7 @@
     display: flex;
     justify-content: space-between;
     padding: var(--size-10) 0 var(--size-9);
-    overflow: visible;
+    overflow: hidden;
 
     .content {
       width: 420px;
