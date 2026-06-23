@@ -1,11 +1,11 @@
 .feature {
-  --accent: #ff842c;
+  --accent: #b85c7a;
   --surface: #fff;
-  --cream: #ffeed7;
-  --text: var(--gray-12);
-  --muted: #535353;
+  --cream: #f6f0ff;
+  --text: #2a1322;
+  --muted: #6c5260;
 
-  padding-bottom: 21.5vw;
+  padding: 14vw 0 21.5vw;
   background: var(--cream);
   color: var(--text);
   overflow: hidden;
@@ -33,9 +33,14 @@
   }
 
   .logo {
-    width: 160px;
+    width: auto;
     margin: 0 auto 14px;
     padding-right: var(--size-1);
+    color: var(--accent);
+    font-family: "Barlow Semi Condensed", "Noto Sans JP", sans-serif;
+    font-size: var(--font-size-7);
+    font-weight: 800;
+    letter-spacing: -0.03em;
   }
 
   h2 {
@@ -125,7 +130,7 @@
 
 @media screen and (min-width: 768px) {
   .feature {
-    padding-bottom: 200px;
+    padding: 96px 0 200px;
 
     .intro-row {
       flex-direction: row;
@@ -156,7 +161,7 @@
     }
 
     .logo {
-      width: 202px;
+      width: auto;
       margin: 0;
       padding-right: 0;
     }

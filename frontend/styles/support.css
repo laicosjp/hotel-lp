@@ -1,10 +1,10 @@
 .support {
-  --accent: #ff842c;
+  --accent: #b85c7a;
   --surface: #fff;
-  --cream: #ffeed7;
-  --text: var(--gray-12);
-  --muted: #535353;
-  --card-shadow: #ffe1c7;
+  --cream: #f6f0ff;
+  --text: #2a1322;
+  --muted: #6c5260;
+  --card-shadow: #e2d6f6;
 
   padding: 23vw 0 28vw;
   background: var(--cream);
