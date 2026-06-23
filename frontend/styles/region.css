@@ -1,9 +1,9 @@
 .region {
-  --accent: #ff842c;
+  --accent: #b85c7a;
   --surface: #fff;
-  --cream: #faf5ef;
-  --text: var(--gray-12);
-  --muted: #535353;
+  --cream: #fff4ee;
+  --text: #2a1322;
+  --muted: #6c5260;
 
   padding: 18.3vw 0;
   background: var(--cream);
@@ -73,7 +73,7 @@
       position: relative;
       display: block;
       height: 54px;
-      border: 4px solid #c86926;
+      border: 4px solid #7f344f;
       border-radius: 999px;
       background: var(--accent);
       color: var(--surface);
@@ -81,7 +81,7 @@
       font-weight: var(--font-weight-7);
       line-height: 54px;
       text-decoration: none;
-      box-shadow: 4px 4px 0 #c86926;
+      box-shadow: 4px 4px 0 #7f344f;
     }
   }
 

@@ -1,17 +1,17 @@
 <section class="feature" id="sec05">
   <div class="intro-row">
-    <p class="intro-photo"><img src="https://athost.jp/shared/img/sec05_p1.jpg" alt="旅館・ホテル運営の“困った”を現場目線で応える" width="1442" height="968" /></p>
+    <p class="intro-photo"><img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1400&q=80" alt="夜のホテル外観" width="1400" height="900" /></p>
     <div class="intro-content">
-      <p class="logo"><img src="https://athost.jp/shared/img/sec05_logo.png" alt="Inn Touch" width="405" height="166" /></p>
-      <h2>宿泊施設の無人運営・省人運営を<br />システムでサポート</h2>
-      <p class="lead">施設運営の手間を減らし、無人でも安心な運営を実現。<br class="pc" /> 遠隔運営や複数物件管理にも対応し、日々の運営業務とゲスト対応をサポートします。</p>
+      <p class="logo">LuckyHotels</p>
+      <h2>レジャーホテルの魅力を<br />きちんと伝える公式サイトへ</h2>
+      <p class="lead">部屋の雰囲気、料金、設備、アクセス。<br class="pc" />来店前に見られる情報を整理し、選びやすいホームページを制作します。</p>
     </div>
   </div>
 
   <div class="wrap">
     <% items.each do |item| %>
       <article class="item">
-        <p class="photo"><img src="https://athost.jp/shared/img/<%= item[:image] %>" alt="<%= item[:alt] %>" width="877" height="731" /></p>
+        <p class="photo"><img src="<%= item[:image] %>" alt="<%= item[:alt] %>" width="900" height="650" /></p>
         <div class="content">
           <div class="title-row">
             <p class="number"><%= item[:number] %></p>

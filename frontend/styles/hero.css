@@ -1,7 +1,11 @@
 .hero {
-  --hero-orange: #ff842c;
-  --hero-button-shadow: #c86926;
-
+  --hero-orange: #b85c7a;
+  --hero-button-shadow: #7f344f;
+  --deep: #2a1322;
+  --wine: #7f344f;
+  --rose: #b85c7a;
+  --cream: #fff4ee;
+  
   position: relative;
   box-sizing: border-box;
   padding: var(--size-fluid-7) var(--size-1) 0 0;
@@ -22,24 +26,43 @@
 
   .kicker {
     margin: 0;
-    color: var(--gray-12);
+    color: var(--deep);
     font-size: var(--font-size-5);
     font-weight: var(--font-weight-7);
     line-height: 1.35;
   }
 
   .logo {
-    width: 61%;
+    width: auto;
     margin: 3vw auto 4.4vw;
 
     a {
-      display: block;
+      display: inline-grid;
+      gap: 2px;
+      color: var(--deep);
+      text-decoration: none;
+    }
+
+    .brand-name {
+      font-family: "Barlow Semi Condensed", "Noto Sans JP", sans-serif;
+      font-size: clamp(56px, 16vw, 96px);
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      line-height: .85;
+    }
+
+    .brand-subtitle {
+      color: var(--rose);
+      font-size: var(--font-size-1);
+      font-weight: var(--font-weight-7);
+      letter-spacing: .18em;
+      text-transform: uppercase;
     }
   }
 
   .catch {
     margin: 0;
-    color: var(--gray-12);
+    color: var(--deep);
     font-size: var(--font-size-6);
     font-weight: var(--font-weight-7);
     line-height: 1.4;
@@ -68,7 +91,7 @@
       height: 54px;
       border-bottom: var(--border-size-3) solid var(--hero-button-shadow);
       border-radius: var(--radius-2);
-      background: var(--hero-orange);
+      background: linear-gradient(135deg, var(--rose), var(--wine));
       color: var(--gray-0);
       font-size: var(--font-size-4);
       font-weight: var(--font-weight-7);
@@ -86,7 +109,7 @@
       height: var(--size-5);
       transform: translateY(-50%);
       border-radius: var(--radius-1);
-      background: var(--gray-0);
+      background: #fff;
     }
 
     a::after {
@@ -98,7 +121,7 @@
       width: var(--size-2);
       height: var(--size-2);
       transform: translateY(-50%);
-      background: var(--hero-orange);
+      background: linear-gradient(135deg, var(--rose), var(--wine));
       clip-path: polygon(0 0, 0% 100%, 100% 50%);
     }
   }
@@ -127,7 +150,11 @@
 
   .deco {
     position: relative;
+    display: block;
+    height: 140px;
     margin: -13.5vw -2% -7vw -7%;
+    background: radial-gradient(circle at 70% 30%, rgb(184 92 122 / 22%), transparent 28%), linear-gradient(135deg, rgb(42 19 34 / 8%), rgb(184 92 122 / 14%));
+    border-radius: 999px 0 0 999px;
   }
 }
 
@@ -146,7 +173,7 @@
 
     .kicker {
       margin-left: -2px;
-      font-size: var(--font-size-8);
+      font-size: var(--font-size-6);
     }
 
     .logo {
@@ -177,13 +204,13 @@
       margin-top: -8px;
 
       p:nth-child(1) {
-        width: 48.7%;
+        width: 50%;
         margin-left: auto;
         margin-right: -3.9%;
       }
 
       p:nth-child(2) {
-        width: 47.2%;
+        width: 48%;
         margin: 11.8vw auto 0 0;
       }
     }

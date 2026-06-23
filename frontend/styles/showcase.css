@@ -1,8 +1,8 @@
 .showcase {
-  --accent: #ff842c;
+  --accent: #b85c7a;
   --surface: #fff;
-  --text: var(--gray-12);
-  --muted: #535353;
+  --text: #2a1322;
+  --muted: #6c5260;
 
   padding: 11.7vw 0 38vw;
   background: var(--surface);

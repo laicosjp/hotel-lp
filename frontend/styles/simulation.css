@@ -1,9 +1,9 @@
 .simulation {
-  --accent: #ff842c;
+  --accent: #b85c7a;
   --surface: #fff;
-  --cream: #faf5ef;
-  --text: var(--gray-12);
-  --muted: #535353;
+  --cream: #fff4ee;
+  --text: #2a1322;
+  --muted: #6c5260;
 
   position: relative;
   padding: 11vw 0 21.4vw;
@@ -142,7 +142,7 @@
     gap: var(--size-1);
     margin: 0;
     padding: 8px 19px 7px 20px;
-    border: 1px solid #ffe0ca;
+    border: 1px solid #efd2dc;
     border-radius: 30px;
     background: var(--cream);
     color: var(--text);
