@@ -1,12 +1,20 @@
-<section>
-  <h2>アットホストが選ばれる理由</h2>
+<section class="reason" id="sec02">
+  <p class="deco"><img src="https://athost.jp/shared/img/sec02_deco.png" alt="deco" width="1058" height="641" /></p>
 
-  <ul>
-    <% items.each do |item| %>
-      <li>
-        <h3><%= item[:title] %></h3>
-        <p><%= item[:body] %></p>
-      </li>
-    <% end %>
-  </ul>
+  <div class="wrap">
+    <div class="heading">
+      <h2>アットホストが選ばれる理由</h2>
+      <p>Reason</p>
+    </div>
+
+    <div class="grid">
+      <% items.each do |item| %>
+        <article class="item">
+          <p class="image"><img src="https://athost.jp/shared/img/<%= item[:image] %>" alt="<%= item[:alt] %>" width="632" height="420" /></p>
+          <h3><%= raw item[:title_html] %></h3>
+          <p class="text"><%= item[:body] %></p>
+        </article>
+      <% end %>
+    </div>
+  </div>
 </section>
