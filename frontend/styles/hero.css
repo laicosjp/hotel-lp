@@ -155,7 +155,7 @@
     }
 
     .catch {
-      font-size: var(--font-size-7);
+      font-size: var(--font-size-5);
       line-height: 47px;
       text-align: left;
     }
@@ -227,7 +227,7 @@
     }
 
     .kicker {
-      font-size: var(--font-size-7);
+      font-size: var(--font-size-5);
     }
 
     .key {
