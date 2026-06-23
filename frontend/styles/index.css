@@ -6,6 +6,7 @@
 @import "./feature.css";
 @import "./region.css";
 @import "./showcase.css";
+@import "./simulation.css";
 
 :root {
   font-family: "Noto Sans JP", system-ui, sans-serif;
