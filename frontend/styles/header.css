@@ -1,54 +1,159 @@
 .header {
-  width: 100%;
-  min-height: var(--size-px-10);
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  padding-inline: var(--size-px-8);
-  box-sizing: border-box;
+  --accent: #ff842c;
 
-  ul {
+  position: relative;
+  z-index: var(--layer-important);
+  width: 100%;
+
+  .nav-panel {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100svh;
+    background: var(--accent);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s var(--ease-3), visibility .5s var(--ease-3);
+  }
+
+  .scroll {
+    height: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+  }
+
+  .nav {
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: var(--size-px-8);
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
     margin: 0;
     padding: 0;
     list-style: none;
   }
 
-  a {
-    display: inline-flex;
-    align-items: center;
-    min-height: var(--size-px-8);
-    color: var(--gray-12);
-    font-size: var(--font-size-2);
-    font-weight: var(--font-weight-7);
-    line-height: 1;
+  .link {
+    box-sizing: border-box;
+    display: block;
+    margin-bottom: var(--size-7);
+    color: var(--gray-0);
+    font-size: var(--font-size-3);
+    font-weight: var(--font-weight-5);
+    text-align: center;
     text-decoration: none;
-    white-space: nowrap;
+  }
 
-    &[aria-current="page"] {
-      text-decoration: underline;
-      text-decoration-thickness: var(--border-size-2);
-      text-underline-offset: var(--size-2);
+  li:last-child .link {
+    margin-bottom: 0;
+  }
+
+  .link:is(:hover, .is-active) {
+    text-decoration: underline;
+    text-underline-offset: var(--size-2);
+  }
+
+  .hamburger {
+    position: fixed;
+    top: var(--size-3);
+    right: var(--size-3);
+    z-index: var(--layer-important);
+    width: var(--size-8);
+    height: var(--size-8);
+    padding: 0;
+    border: 0;
+    border-radius: var(--radius-1);
+    background: var(--accent);
+    overflow: hidden;
+    cursor: pointer;
+    transition: opacity .3s var(--ease-3);
+
+    span,
+    span::before {
+      position: absolute;
+      left: calc(50% - var(--size-3));
+      width: var(--size-5);
+      height: var(--border-size-2);
+      border-radius: var(--radius-round);
+      background: var(--gray-0);
+      content: "";
+      transition: transform .2s var(--ease-3), top .2s var(--ease-3);
+    }
+
+    span {
+      top: 54%;
+    }
+
+    span::before {
+      top: calc(var(--size-2) * -1);
+      left: 0;
     }
   }
 }
 
-@media (--md-n-below) {
-  .site-header {
-    min-height: auto;
-    justify-content: flex-start;
-    padding: var(--size-px-4);
-    overflow-x: auto;
-
-    ul {
-      gap: var(--size-px-5);
+body.menu-open {
+  .header {
+    .nav-panel {
+      z-index: var(--layer-5);
+      opacity: 1;
+      visibility: visible;
+      overflow: auto;
     }
 
-    a {
-      font-size: var(--font-size-1);
+    .hamburger span {
+      transform: translate3d(var(--size-1), calc(var(--size-1) * -1), 0) rotate(-31deg);
+    }
+
+    .hamburger span::before {
+      top: 0;
+      transform: rotate(-119deg);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    position: relative;
+    width: 100%;
+    z-index: var(--layer-5);
+
+    .nav-panel {
+      position: absolute;
+      inset: 0 0 auto auto;
+      z-index: var(--layer-1);
+      height: auto;
+      background: var(--gray-0);
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .scroll {
+      display: flex;
+      justify-content: flex-start;
+      padding-bottom: 0;
+    }
+
+    .nav {
+      flex-direction: row;
+      justify-content: space-between;
+      width: min(41rem, calc(100% - var(--size-8)));
+      height: auto;
+      margin: var(--size-7) var(--size-8) 0 auto;
+    }
+
+    .link {
+      margin-bottom: 0;
+      color: var(--gray-12);
+      font-size: var(--font-size-2);
+    }
+
+    .link:is(:hover, .is-active) {
+      text-underline-offset: var(--size-2);
+    }
+
+    .hamburger {
+      display: none;
     }
   }
 }
