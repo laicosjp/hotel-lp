@@ -13,5 +13,4 @@ layout: default
 <%= render Core::Showcase.new(metadata: site.metadata, resource: resource) %>
 <%= render Core::Simulation.new(metadata: site.metadata, resource: resource) %>
 <%= render Core::Contact.new(metadata: site.metadata, resource: resource) %>
-<%= render Core::Article.new(metadata: site.metadata, resource: resource) %>
 <%= render Core::Footer.new(metadata: site.metadata, resource: resource) %>

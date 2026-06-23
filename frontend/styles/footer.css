@@ -1,0 +1,139 @@
+.site-footer {
+  --accent: #ff842c;
+  --text: var(--gray-12);
+  --muted: #535353;
+  --line: #d8d8d8;
+
+  position: relative;
+  width: 100%;
+  padding: 13vw 0;
+  color: var(--text);
+  background: #fff;
+
+  a {
+    color: inherit;
+  }
+
+  .wrap {
+    box-sizing: border-box;
+    width: min(100% - 28px, 1200px);
+    margin-inline: auto;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-3);
+  }
+
+  .logo {
+    width: 166px;
+    margin: 0 auto;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  h3 {
+    margin: 19px 0 3px;
+    font-size: var(--font-size-1);
+    font-weight: var(--font-weight-7);
+  }
+
+  .text {
+    margin: 0;
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.8;
+  }
+
+  .text a,
+  .link a {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .orange {
+    color: var(--accent);
+  }
+
+  .link {
+    margin: 0;
+    color: var(--accent);
+    font-size: 12px;
+  }
+
+  .link:first-child {
+    margin-top: 26px;
+  }
+
+  .link::after {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 3px 0 -2px 4px;
+    background: url("https://athost.jp/shared/img/shared/icon_link.png") no-repeat center top / contain;
+  }
+
+  address {
+    margin: 45px auto 0;
+    padding-top: 30px;
+    padding-left: 14px;
+    border-top: 1px solid var(--line);
+    font-family: "Barlow Semi Condensed", "Noto Sans JP", sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .site-footer {
+    padding: 83px 0 34px;
+
+    .row {
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
+    .left {
+      display: flex;
+      align-items: center;
+      gap: 34px;
+    }
+
+    .logo {
+      width: 205px;
+      margin: 0;
+    }
+
+    h3 {
+      margin: 0 0 8px;
+      font-size: var(--font-size-2);
+    }
+
+    .text,
+    .link {
+      font-size: var(--font-size-0);
+    }
+
+    .link:first-child {
+      margin-top: 0;
+    }
+
+    .link + .link {
+      margin-top: var(--size-2);
+    }
+
+    address {
+      margin-top: 58px;
+      padding-top: 26px;
+      padding-left: 0;
+    }
+  }
+}
