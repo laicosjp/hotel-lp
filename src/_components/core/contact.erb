@@ -11,11 +11,11 @@
       </ul>
     </div>
 
-    <form class="form" action="#" method="post">
+    <form class="form" action="https://luckyhotels.jp/lp_contact" method="post" data-contact-form>
       <div class="grid">
         <label>
           <span>お名前</span>
-          <input type="text" name="name" autocomplete="name" placeholder="山田 太郎" />
+          <input type="text" name="name" autocomplete="name" placeholder="山田 太郎" required />
         </label>
         <label>
           <span>会社名・施設名</span>
@@ -25,7 +25,7 @@
       <div class="grid">
         <label>
           <span>メールアドレス</span>
-          <input type="email" name="email" autocomplete="email" placeholder="example@example.com" />
+          <input type="email" name="email" autocomplete="email" placeholder="example@example.com" required />
         </label>
         <label>
           <span>電話番号</span>
@@ -34,11 +34,15 @@
       </div>
       <label>
         <span>お問い合わせ内容</span>
-        <textarea name="message" rows="6" placeholder="現在のホームページURL、困っていること、制作・改善したい内容などをご記入ください。"></textarea>
+        <textarea name="message" rows="6" placeholder="現在のホームページURL、困っていること、制作・改善したい内容などをご記入ください。" required></textarea>
+      </label>
+      <label class="website-field" aria-hidden="true">
+        <span>Webサイト</span>
+        <input type="text" name="website" tabindex="-1" autocomplete="off" />
       </label>
       <div class="actions">
         <button type="submit">相談内容を送る</button>
-        <p>送信機能は接続前の仮フォームです。</p>
+        <p data-contact-status role="status" aria-live="polite">送信後、内容を確認してご連絡します。</p>
       </div>
     </form>
   </div>
