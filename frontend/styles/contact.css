@@ -155,6 +155,14 @@
     box-shadow: 0 0 0 4px rgb(128 92 184 / 14%);
   }
 
+  .website-field {
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
   .actions {
     display: grid;
     gap: var(--size-3);
@@ -175,6 +183,11 @@
     font-size: var(--font-size-2);
     font-weight: var(--font-weight-7);
     cursor: pointer;
+  }
+
+  button:disabled {
+    opacity: 0.65;
+    cursor: wait;
   }
 
   button::before {
@@ -205,6 +218,16 @@
     margin: 0;
     color: var(--muted);
     font-size: var(--font-size-0);
+  }
+
+  [data-contact-status="success"] {
+    color: #247348;
+    font-weight: var(--font-weight-7);
+  }
+
+  [data-contact-status="error"] {
+    color: #b42318;
+    font-weight: var(--font-weight-7);
   }
 }
 
