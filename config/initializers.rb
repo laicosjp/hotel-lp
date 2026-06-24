@@ -16,7 +16,7 @@
 
 Bridgetown.configure do |config|
   # The base hostname & protocol for your site, e.g. https://example.com
-  url ""
+  url "https://laicosjp.github.io"
 
   # Available options are `erb` (default), `serbea`, or `liquid`
   template_engine "erb"
@@ -46,7 +46,7 @@ Bridgetown.configure do |config|
   # If you're using esbuild for frontend assets, edit `esbuild.config.js` to
   # update `publicPath`.
   #
-  # base_path "/"
+  base_path "/hotel-lp"
 
   # You can also modify options on this configuration object directly, like so:
   #
