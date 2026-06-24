@@ -4,7 +4,7 @@ import "$styles/syntax-highlighting.css"
 // Import all JavaScript & CSS files from src/_components
 import components from "$components/**/*.{js,jsx,js.rb,css}"
 
-const CONTACT_ENDPOINT = "https://luckyhotels.jp/lp_contact"
+const CONTACT_ENDPOINT = "https://script.google.com/macros/s/AKfycbwG7pveu9WkCGOKsWr-F9zpv3OE715He4bPYGGNH1fes0cjHfZhetaavqhPJwKtG8GLgQ/exec"
 
 document.addEventListener("click", (event) => {
   const button = event.target.closest(".header .hamburger")
@@ -33,14 +33,11 @@ async function submitContactForm(form) {
   setSubmitDisabled(submitButton, true)
 
   try {
-    const response = await fetch(CONTACT_ENDPOINT, {
+    await fetch(CONTACT_ENDPOINT, {
       method: "POST",
+      mode: "no-cors",
       body: payload
     })
-
-    if (!response.ok) {
-      throw new Error(`Contact request failed: ${response.status}`)
-    }
 
     form.reset()
     setContactStatus(status, "送信しました。内容を確認してご連絡します。", "success")
