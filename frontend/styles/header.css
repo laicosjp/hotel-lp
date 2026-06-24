@@ -1,5 +1,5 @@
 .header {
-  --accent: #ff842c;
+  --accent: #b85c7a;
   --surface: #fff;
 
   position: relative;
@@ -66,29 +66,29 @@
     border: 0;
     border-radius: var(--radius-1);
     background: var(--accent);
+    color: var(--surface);
     overflow: hidden;
     cursor: pointer;
-    transition: opacity .3s var(--ease-3);
+    transition: opacity .3s var(--ease-3), background-color .3s var(--ease-3);
 
-    span,
-    span::before {
+    .hamburger-icon {
       position: absolute;
-      left: calc(50% - var(--size-3));
-      width: var(--size-5);
-      height: var(--border-size-2);
-      border-radius: var(--radius-round);
-      background: var(--surface);
-      content: "";
-      transition: transform .2s var(--ease-3), top .2s var(--ease-3);
+      inset: 50% auto auto 50%;
+      width: 28px;
+      height: 28px;
+      color: currentcolor;
+      fill: none;
+      stroke: currentcolor;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-width: 2.4;
+      transform: translate(-50%, -50%);
+      transition: opacity .2s var(--ease-3), transform .2s var(--ease-3);
     }
 
-    span {
-      top: 54%;
-    }
-
-    span::before {
-      top: calc(var(--size-2) * -1);
-      left: 0;
+    .hamburger-icon-close {
+      opacity: 0;
+      transform: translate(-50%, -50%) rotate(-45deg) scale(.82);
     }
   }
 }
@@ -102,13 +102,14 @@ body.menu-open {
       overflow: auto;
     }
 
-    .hamburger span {
-      transform: translate3d(var(--size-1), calc(var(--size-1) * -1), 0) rotate(-31deg);
+    .hamburger-icon-menu {
+      opacity: 0;
+      transform: translate(-50%, -50%) rotate(45deg) scale(.82);
     }
 
-    .hamburger span::before {
-      top: 0;
-      transform: rotate(-119deg);
+    .hamburger-icon-close {
+      opacity: 1;
+      transform: translate(-50%, -50%) rotate(0deg) scale(1);
     }
   }
 }
