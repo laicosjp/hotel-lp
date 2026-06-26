@@ -36,6 +36,16 @@
     margin-inline: auto;
   }
 
+  .intro {
+    max-width: 780px;
+    margin: 24px auto 0;
+    color: var(--muted);
+    font-size: var(--font-size-0);
+    font-weight: var(--font-weight-4);
+    line-height: var(--font-lineheight-5);
+    text-align: left;
+  }
+
   .grid {
     display: flex;
     flex-direction: column;
@@ -139,6 +149,12 @@
 
     .section-heading p {
       margin-top: 7px;
+    }
+
+    .intro {
+      margin-top: 28px;
+      text-align: center;
+      font-size: var(--font-size-1);
     }
 
     .grid {
